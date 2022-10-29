@@ -170,6 +170,45 @@ namespace ConsoleApp2
             }
 
         }
+        public void GetSequenceCharacterCount2Approach(string Word)
+        {
+            string result = "";
+
+            Console.WriteLine("Enter the word!..");
+            Word = Console.ReadLine();
+            char[] character = Word.ToCharArray();
+            if (!string.IsNullOrEmpty(Word))
+            {
+                Console.WriteLine("entered word:" + Word);
+                for (int i = 0; i < character.Length; i++)
+                {
+                    int count = 1;
+                    for (int j = i + 1; j < character.Length; j++)
+                    {
+
+                        if (character[i] == character[j])
+                        {
+                            count++;
+                            i = j;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    if (count > 1)
+                    {
+                        result += character[i] + " count is :" + count + ",";
+                    }
+
+
+                }
+
+                Console.WriteLine(result);
+            }
+
+            Console.WriteLine("No word enterd");
+        }
         public void GetSequenceCharacterCount(string s)
         {
             char[] chararr = s.ToCharArray();
