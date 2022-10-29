@@ -1,7 +1,6 @@
-﻿using ConsoleApp2;
+﻿
 
-string s = "werqwerqeettyyurryyy";
+using ConsoleApp2;
 
-
-AllPrograms allPrograms = new AllPrograms();
-allPrograms.GetSequenceCharacterCount(s);
+CallAPI callAPI = new CallAPI();
+callAPI.GetData();
