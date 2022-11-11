@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TestProject\\ConsoleApp2.csproj": {}
+    "D:\\RING-CENTRAL-POC\\TestProject\\ConsoleApp2.csproj": {}
   },
   "projects": {
-    "D:\\TestProject\\ConsoleApp2.csproj": {
+    "D:\\RING-CENTRAL-POC\\TestProject\\ConsoleApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TestProject\\ConsoleApp2.csproj",
+        "projectUniqueName": "D:\\RING-CENTRAL-POC\\TestProject\\ConsoleApp2.csproj",
         "projectName": "ConsoleApp2",
-        "projectPath": "D:\\TestProject\\ConsoleApp2.csproj",
+        "projectPath": "D:\\RING-CENTRAL-POC\\TestProject\\ConsoleApp2.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\TestProject\\obj\\",
+        "outputPath": "D:\\RING-CENTRAL-POC\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,18 @@
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.2, )"
+            },
+            "RingCentral.Net": {
+              "target": "Package",
+              "version": "[5.18.0, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.4.2, )"
             }
           },
           "imports": [

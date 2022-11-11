@@ -271,6 +271,21 @@ namespace ConsoleApp2
 
             Console.WriteLine(output);
         }
+        public void ReplaceDuplicateCharactor()
+        {
+
+            string str = "citustec", ouputstring = str;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str.ToCharArray().Where(x => x == str[i]).Count() > 1)
+                {
+                    ouputstring = ouputstring.Replace(str[i].ToString(), "");
+                }
+            }
+            Console.Write(ouputstring);
+        }
 
     }
+   
 }

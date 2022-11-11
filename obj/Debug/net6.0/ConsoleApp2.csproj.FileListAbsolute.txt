@@ -58,3 +58,8 @@ D:\TestProject\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 D:\TestProject\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
 D:\TestProject\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\TestProject\obj\Debug\net6.0\ConsoleApp2.csproj.CopyComplete
+D:\TestProject\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\TestProject\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\TestProject\bin\Debug\net6.0\RestSharp.dll
+D:\TestProject\bin\Debug\net6.0\RingCentral.Net.dll
+D:\TestProject\bin\Debug\net6.0\xunit.assert.dll
