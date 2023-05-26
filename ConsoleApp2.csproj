@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="RestSharp" Version="108.0.2" />
     <PackageReference Include="RingCentral.Net" Version="5.18.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <PackageReference Include="xunit.assert" Version="2.4.2" />
   </ItemGroup>
 

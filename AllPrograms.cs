@@ -73,6 +73,22 @@ namespace ConsoleApp2
             }
 
         }
+        public bool IsPrimeNumber(int number)
+        {
+            if (number % 2 == 0)
+            {
+                return number == 2;
+            }
+            else
+            {
+                var topLimit = (int)Math.Sqrt(number);
+                for (int i = 3; i <= topLimit; i += 2)
+                {
+                    if (number % i == 0) return false;
+                }
+                return true;
+            }
+        }
         public void PrintRepeated(string str = "")
         {
             string store = "";
@@ -285,7 +301,71 @@ namespace ConsoleApp2
             }
             Console.Write(ouputstring);
         }
+        List<int> maxSubArraySum(int[] a)
+        {
+            List<int> va = new List<int>();
 
+            for (int i = 0; i < a.Length; i++)
+            {
+                int values = 0;
+                for (int q = i; q < a.Length; q++)
+                {
+                    values += a[q];
+                    va.Add(values);
+                }
+            }
+
+            return va;
+        }
+
+        // public MaxSum(new int[] { 3, 5, 100 }, new int[] { 1, 3, 5, 7, 9 });
+        public int MaxSum(int[] nums1, int[] nums2)
+        {
+            int[] first;
+            int[] second;
+
+            if (nums1.Length > nums2.Length)
+            {
+                first = nums1;
+                second = nums2;
+            }
+            else
+            {
+                first = nums2;
+                second = nums1;
+            }
+            int values = 0; int startingindex = 0;
+            for (int i = 0; i < first.Length; i++)
+            {
+                if (second[0] == first[i] && i != 0)
+                {
+                    startingindex = i;
+
+                }
+                if (startingindex != 0 && i - startingindex < second.Length)
+                {
+                    if (second[i - startingindex] > first[i])
+                    {
+                        values += second[i - startingindex];
+                    }
+                    else if (second[i - startingindex] == first[i])
+                    {
+                        values += second[i - startingindex];
+                    }
+                    else
+                    {
+                        values += first[i];
+                    }
+                }
+                else
+                {
+                    values += first[i];
+                }
+
+            }
+            Console.Write(values);
+            return values;
+        }
     }
-   
+
 }
